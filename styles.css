@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#generateBtn {
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#generateBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.output {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: auto;
+    font-family: monospace;
+    word-break: break-word;
+}
+
+.output span {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.output span:hover {
+    transform: rotate(10deg) scale(1.2);
+}  margin: 30px 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #00ccff;
+    text-shadow: 0px 0px 10px #00ccff, 0px 0px 20px #0099ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: #111;
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 20px #00ffcc, 0px 0px 30px #008080;
+    }
+    100% {
+        text-shadow: 0px 0px 30px #00ffcc, 0px 0px 40px #00ffff;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateX(20deg) rotateY(-10deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(20deg) rotateY(-10deg);
+    }
+}
